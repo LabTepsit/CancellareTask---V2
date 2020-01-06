@@ -38,11 +38,14 @@ namespace AppCancellareTask
                 //per fermare TAsk
                 if (ct.Token.IsCancellationRequested)
                 {
+                    // No Gracefully stop
+                    // ct.Token.ThrowIfCancellationRequested();
+
+
                     //Gracefully
                     break;
 
-                    // No Gracefully stop
-                    // ct.Token.ThrowIfCancellationRequested();
+             
                     // break;
                 }
 
